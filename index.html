@@ -11,12 +11,14 @@
 <body>
   <h1>ETCH-A-SKETCH</h1>
   <button id="grid-size">Input Grid Size</button>
+  <p id="message"></p>
+  <p id="mode"></p>
   <div class="board-container">
     <div class="board"></div>
     <div class="buttons">
-      <button class="black-button">Black</button>
-      <button class="random-button">Random</button>
-      <button class="reset-button">Reset</button>
+      <button class="black-button" onclick="setColor('black')">Black</button>
+      <button class="random-button" onclick="setColor('random')">Random</button>
+      <button class="reset-button" onclick="resetBoard()">Reset</button>
     </div>
   </div>
 </body>
